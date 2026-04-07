@@ -4,47 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabhath Palakurthi</title>
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Prabhath Palakurthi is a computer science student and software builder focused on hackathon projects, open source, and product engineering."
+    >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="sidebar">
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-        <div class="nav-footer">
-            <a href="mailto:palakurthiprabhath@gmail.com">email</a>
-            <a href="https://www.linkedin.com/in/prabhath004/" target="_blank">linkedin</a>
-            <a href="https://github.com/prabhath004" target="_blank">github</a>
-        </div>
-    </nav>
-
-    <main class="content">
-        <div class="page-content">
-            <p class="greeting">Hi, I'm</p>
+    <main class="page">
+        <header class="header">
             <h1>Prabhath Palakurthi</h1>
-            <p class="subtitle">Software Engineer & AI Researcher</p>
-            
-            <div class="intro">
-                <p>
-                    Computer Science student at George Mason University, graduating May 2026. 
-                    I build full-stack applications and AI-powered systems.
-                </p>
-                <p>
-                    Focused on developer tools, automation, and LLM safety research.
-                </p>
-            </div>
+            <p class="links">
+                <a href="mailto:palakurthiprabhath@gmail.com">Contact</a>
+                <a href="https://www.linkedin.com/in/prabhath004/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/prabhath004" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+            <p class="intro">
+                I study Computer Science at George Mason University, graduating May 2026. I like building useful software
+                quickly, especially products shaped by AI, web systems, and developer workflows.
+            </p>
+            <p class="intro">
+                My strongest work comes from hackathons, internships, and open source, where I focus
+                on shipping clear product experiences instead of just prototypes.
+            </p>
+        </header>
 
-            <div class="cta">
-                <a href="experience.html" class="btn">View Experience →</a>
-                <a href="projects.html" class="btn btn-outline">See Projects</a>
-            </div>
-        </div>
+        <section id="projects">
+            <h2>Hackathon projects</h2>
+
+            <p>
+                <strong>TennisIQ</strong>, Hacklytics 2026. Built a system that turns raw tennis match
+                footage into a scouting-style report with court detection, player and ball tracking,
+                key-moment tagging, and coach annotations.
+                <a href="https://devpost.com/software/tennisiq" target="_blank" rel="noopener noreferrer">Devpost</a>
+            </p>
+
+            <p>
+                <strong>Replic</strong>, HackPrinceton 2025, top 10 finalist. Built a product that
+                helps startups monitor social channels, draft responses in their own voice, and keep a
+                lightweight approval flow before publishing.
+                <a href="https://github.com/prabhath004/twitly" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="divider">·</span>
+                <a href="https://devpost.com/software/brand-pilot" target="_blank" rel="noopener noreferrer">Devpost</a>
+            </p>
+
+            <p>
+                <strong>Forensic Fusion</strong>, HoyaHacks 2025, top 10 finalist. Built an AI-assisted
+                memory forensics workflow that helps surface insights from dumps and related evidence
+                faster.
+                <a href="https://github.com/prabhath004/forensic-fusion" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="divider">·</span>
+                <a href="https://devpost.com/software/goat-cdbnoz" target="_blank" rel="noopener noreferrer">Devpost</a>
+            </p>
+
+            <p>
+                <strong>Watt-Share</strong>, HackHarvard 2025. Built a microgrid simulator for
+                visualizing how surplus solar energy can be distributed across a neighborhood in a
+                fairer way.
+                <a href="https://devpost.com/software/project-hackharvard-25" target="_blank" rel="noopener noreferrer">Devpost</a>
+            </p>
+
+            <p>
+                <strong>EcoHive AI</strong>, HoyaHacks 2024. Built a sustainability-focused platform for
+                eco-friendly ideas, events, and AI-assisted community engagement.
+                <a href="https://github.com/prabhath004/Ecohive" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="divider">·</span>
+                <a href="https://devpost.com/software/ecosphere-ai" target="_blank" rel="noopener noreferrer">Devpost</a>
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+
+            <p>
+                <strong>George Mason University</strong>, research assistant, LLM watermarking. I helped study token-level watermarking at inference time,
+                run vLLM experiments on decoding and sampling, measure GPU speed and robustness, and
+                support benchmarks and documentation.
+            </p>
+        </section>
+
+        <section id="open-source">
+            <h2>Open source</h2>
+
+            <p>
+                I contribute to open source across developer tooling and AI infrastructure. Recent
+                merged work includes adding <code>max_file_size</code> support in
+                <a href="https://github.com/cocoindex-io/cocoindex/pull/1257" target="_blank" rel="noopener noreferrer">Amazon S3</a>,
+                <a href="https://github.com/cocoindex-io/cocoindex/pull/1259" target="_blank" rel="noopener noreferrer">Azure Blob</a>,
+                and
+                <a href="https://github.com/cocoindex-io/cocoindex/pull/1260" target="_blank" rel="noopener noreferrer">LocalFile</a>
+                sources for CocoIndex.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <p>
+                <strong>TechSur Solutions LLC</strong>, full stack and AI intern, summer 2025. Helped
+                build an internal platform that turns product requirements into Jira tickets tied to
+                Git workflows, and worked on AI-assisted VS Code flows for code suggestions, test
+                generation, and legacy modernization.
+            </p>
+
+            <p>
+                <strong>Automate365 (VoiceBotics)</strong>, AI systems intern, spring 2025. Built
+                Python services connected to CRM tools, wired API and SQL automations, and supported
+                dashboards for monitoring internal workflows.
+            </p>
+
+            <p>
+                <strong>Rise Consultancy</strong>, software intern, summer 2024. Built AWS-backed web
+                applications with React and Node, added serverless APIs, and supported a signal-anomaly
+                detection project using cloud data pipelines and ML services.
+            </p>
+        </section>
     </main>
 </body>
 </html>
